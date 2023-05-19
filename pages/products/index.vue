@@ -21,7 +21,7 @@ definePageMeta({
   layout: "products",
 });
 
-const { data: products } = await useFetch("https://fakestoreapi.com/products");
+const { data: products } = await useFetch("https://fakestoreapi.com/products?limit=7");
 </script>
 
 <style scoped></style>
