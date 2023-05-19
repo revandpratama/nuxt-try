@@ -2,6 +2,10 @@
     <div>
         <h2 class="text-xl my-5">{{ product.title }}</h2>
         <p>{{ product.description }}</p>
+
+        <div class="my-10">
+            <NuxtLink to="/products" class="btn">Back</NuxtLink>
+        </div>
     </div>
 </template>
 
