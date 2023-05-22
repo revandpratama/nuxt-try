@@ -14,6 +14,10 @@
       </NuxtLink>
     </div>
   </div>
+
+  <div>
+    {{ hello }}
+  </div>
 </template>
 
 <script setup>
@@ -21,7 +25,10 @@ definePageMeta({
   layout: "products",
 });
 
-const { data: products } = await useFetch("https://fakestoreapi.com/products?limit=7");
+const { data: hello} = await useFetch('/api/nuxt')  
+
+const { data: products } = await useFetch("https://fakestoreapi.com/products");
+// const products = await useFetch("https://fakestoreapi.com/products");
 </script>
 
 <style scoped></style>
